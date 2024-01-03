@@ -6,6 +6,8 @@
     <title>My Website</title>
   </head>
   <body>
-    <h1>My Website</h1>
+    {% for post in  posts%}
+      <h1>{{post.title}}</h1>
+    {% endfor %}
   </body>
 </html>
